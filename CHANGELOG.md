@@ -1,3 +1,517 @@
+<a name="0.14.3"></a>
+## [0.14.3](https://github.com/angular-ui/bootstrap/compare/0.14.2...v0.14.3) (2015-10-23)
+
+
+### Bug Fixes
+
+* **alert:** allow interpolations with dismiss-on-timeout ([de24f46](https://github.com/angular-ui/bootstrap/commit/de24f46)), closes [#4665](https://github.com/angular-ui/bootstrap/issues/4665) [#4666](https://github.com/angular-ui/bootstrap/issues/4666)
+* **buttons:** double toggle on spacebar ([e8808d3](https://github.com/angular-ui/bootstrap/commit/e8808d3)), closes [#4474](https://github.com/angular-ui/bootstrap/issues/4474) [#4630](https://github.com/angular-ui/bootstrap/issues/4630)
+* **collapse:** fix collapse animation timing ([6d1cd0f](https://github.com/angular-ui/bootstrap/commit/6d1cd0f)), closes [#4493](https://github.com/angular-ui/bootstrap/issues/4493)
+* **collapse:** trigger digest after ([3144633](https://github.com/angular-ui/bootstrap/commit/3144633)), closes [#4647](https://github.com/angular-ui/bootstrap/issues/4647) [#4628](https://github.com/angular-ui/bootstrap/issues/4628) [#4561](https://github.com/angular-ui/bootstrap/issues/4561) [#4651](https://github.com/angular-ui/bootstrap/issues/4651)
+* **datepicker:** datepicker-popup nest in dropdown ([134086a](https://github.com/angular-ui/bootstrap/commit/134086a)), closes [#4197](https://github.com/angular-ui/bootstrap/issues/4197) [#4693](https://github.com/angular-ui/bootstrap/issues/4693)
+* **datepicker:** fix support for literal format on popup ([7c3c631](https://github.com/angular-ui/bootstrap/commit/7c3c631)), closes [#4635](https://github.com/angular-ui/bootstrap/issues/4635) [#4616](https://github.com/angular-ui/bootstrap/issues/4616)
+* **tooltip:** delay timeouts ([02425b8](https://github.com/angular-ui/bootstrap/commit/02425b8)), closes [#4621](https://github.com/angular-ui/bootstrap/issues/4621) [#4618](https://github.com/angular-ui/bootstrap/issues/4618)
+* **tooltip:** null scope check in isOpen watch ([1f94104](https://github.com/angular-ui/bootstrap/commit/1f94104)), closes [#4697](https://github.com/angular-ui/bootstrap/issues/4697) [#4683](https://github.com/angular-ui/bootstrap/issues/4683)
+* **tooltip:** scrollbar flashing ([6c82b2b](https://github.com/angular-ui/bootstrap/commit/6c82b2b)), closes [#4550](https://github.com/angular-ui/bootstrap/issues/4550) [#4623](https://github.com/angular-ui/bootstrap/issues/4623) [#4458](https://github.com/angular-ui/bootstrap/issues/4458)
+* **typeahead:** dangling event listeners ([94fb282](https://github.com/angular-ui/bootstrap/commit/94fb282)), closes [#4632](https://github.com/angular-ui/bootstrap/issues/4632) [#4636](https://github.com/angular-ui/bootstrap/issues/4636)
+
+### Features
+
+* **datepicker:** add templateUrl support for pickers ([1f65d87](https://github.com/angular-ui/bootstrap/commit/1f65d87)), closes [#4432](https://github.com/angular-ui/bootstrap/issues/4432)
+* **datepicker:** preserve timezone with model ([0d64aad](https://github.com/angular-ui/bootstrap/commit/0d64aad)), closes [#4676](https://github.com/angular-ui/bootstrap/issues/4676)
+* **modal:** support $uibModalInstance ([97fd37e](https://github.com/angular-ui/bootstrap/commit/97fd37e)), closes [#4638](https://github.com/angular-ui/bootstrap/issues/4638) [#4661](https://github.com/angular-ui/bootstrap/issues/4661)
+
+
+
+<a name="0.14.2"></a>
+## [0.14.2](https://github.com/angular-ui/bootstrap/compare/0.14.1...v0.14.2) (2015-10-14)
+
+
+### Bug Fixes
+
+* **progressbar:** fix percentage calculation ([feb689c](https://github.com/angular-ui/bootstrap/commit/feb689c)), closes [#4471](https://github.com/angular-ui/bootstrap/issues/4471) [#4588](https://github.com/angular-ui/bootstrap/issues/4588) [#4452](https://github.com/angular-ui/bootstrap/issues/4452)
+* **tooltip:** clean up stackedMap on scope destroy ([ebb5e18](https://github.com/angular-ui/bootstrap/commit/ebb5e18)), closes [#4610](https://github.com/angular-ui/bootstrap/issues/4610) [#4604](https://github.com/angular-ui/bootstrap/issues/4604)
+* **tooltip:** popup close delay not respected ([6daf871](https://github.com/angular-ui/bootstrap/commit/6daf871)), closes [#4597](https://github.com/angular-ui/bootstrap/issues/4597) [#4567](https://github.com/angular-ui/bootstrap/issues/4567)
+
+
+
+<a name="0.14.1"></a>
+## [0.14.1](https://github.com/angular-ui/bootstrap/compare/0.14.0...v0.14.1) (2015-10-11)
+
+
+### Bug Fixes
+
+* **accordion:** make deprecated controller work with 1.3.x ([c5e6042](https://github.com/angular-ui/bootstrap/commit/c5e6042)), closes [#4574](https://github.com/angular-ui/bootstrap/issues/4574)
+* **alert:** make deprecated controller work with 1.3.x ([e8c8ee6](https://github.com/angular-ui/bootstrap/commit/e8c8ee6)), closes [#4576](https://github.com/angular-ui/bootstrap/issues/4576)
+* **buttons:** make deprecated controller work with 1.3.x ([1e3cbd8](https://github.com/angular-ui/bootstrap/commit/1e3cbd8)), closes [#4577](https://github.com/angular-ui/bootstrap/issues/4577)
+* **carousel:** make deprecated controller work with 1.3.x ([f6c7931](https://github.com/angular-ui/bootstrap/commit/f6c7931)), closes [#4578](https://github.com/angular-ui/bootstrap/issues/4578)
+* **datepicker:** make deprecated controller work with 1.3.x ([18371ab](https://github.com/angular-ui/bootstrap/commit/18371ab)), closes [#4586](https://github.com/angular-ui/bootstrap/issues/4586)
+* **dropdown:** make deprecated controller work with 1.3.x ([ae1a87c](https://github.com/angular-ui/bootstrap/commit/ae1a87c)), closes [#4585](https://github.com/angular-ui/bootstrap/issues/4585)
+* **pagination:** make deprecated controller work with 1.3.x ([d50e8d2](https://github.com/angular-ui/bootstrap/commit/d50e8d2)), closes [#4580](https://github.com/angular-ui/bootstrap/issues/4580)
+* **progressbar:** make deprecated controller work with 1.3.x ([1c5e479](https://github.com/angular-ui/bootstrap/commit/1c5e479)), closes [#4581](https://github.com/angular-ui/bootstrap/issues/4581)
+* **rating:** make deprecated controller work with 1.3.x ([ce1114a](https://github.com/angular-ui/bootstrap/commit/ce1114a)), closes [#4582](https://github.com/angular-ui/bootstrap/issues/4582)
+* **tabs:** make deprecated controller work with 1.3.x ([685bd6a](https://github.com/angular-ui/bootstrap/commit/685bd6a)), closes [#4583](https://github.com/angular-ui/bootstrap/issues/4583)
+* **timepicker:** make deprecated controller work with 1.3.x ([00f60ee](https://github.com/angular-ui/bootstrap/commit/00f60ee)), closes [#4584](https://github.com/angular-ui/bootstrap/issues/4584)
+
+### Features
+
+* **timepicker:** add accessibility improvements ([4ebecbc](https://github.com/angular-ui/bootstrap/commit/4ebecbc)), closes [#4569](https://github.com/angular-ui/bootstrap/issues/4569) [#4573](https://github.com/angular-ui/bootstrap/issues/4573)
+
+
+
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/angular-ui/bootstrap/compare/0.13.4...0.14.0) (2015-10-09)
+
+
+### Bug Fixes
+
+* **accordion:** coerce to boolean ([b864aa9](https://github.com/angular-ui/bootstrap/commit/b864aa9)), closes [#4385](https://github.com/angular-ui/bootstrap/issues/4385)
+* **accordion:** re-expose AccordionController ([5382226](https://github.com/angular-ui/bootstrap/commit/5382226)), closes [#4524](https://github.com/angular-ui/bootstrap/issues/4524)
+* **alert:** properly pass $event as local ([eb2366f](https://github.com/angular-ui/bootstrap/commit/eb2366f)), closes [#4386](https://github.com/angular-ui/bootstrap/issues/4386) [#4387](https://github.com/angular-ui/bootstrap/issues/4387)
+* **alert:** re-expose AlertController ([f561aa9](https://github.com/angular-ui/bootstrap/commit/f561aa9)), closes [#4525](https://github.com/angular-ui/bootstrap/issues/4525)
+* **buttons:** re-expose ButtonsController ([c0dbf79](https://github.com/angular-ui/bootstrap/commit/c0dbf79)), closes [#4526](https://github.com/angular-ui/bootstrap/issues/4526)
+* **carousel:** fix reading of `noTransition` ([2e26815](https://github.com/angular-ui/bootstrap/commit/2e26815)), closes [#4325](https://github.com/angular-ui/bootstrap/issues/4325)
+* **carousel:** improve accessibility ([da71159](https://github.com/angular-ui/bootstrap/commit/da71159)), closes [#4478](https://github.com/angular-ui/bootstrap/issues/4478) [#4479](https://github.com/angular-ui/bootstrap/issues/4479)
+* **carousel:** re-enable deprecated directives ([30e8aa7](https://github.com/angular-ui/bootstrap/commit/30e8aa7)), closes [#4527](https://github.com/angular-ui/bootstrap/issues/4527)
+* **carousel:** reset $currentTransition when no slides ([0b3d5bd](https://github.com/angular-ui/bootstrap/commit/0b3d5bd)), closes [#4532](https://github.com/angular-ui/bootstrap/issues/4532) [#4390](https://github.com/angular-ui/bootstrap/issues/4390)
+* **datepicker:** add check for `contains` ([868c0e2](https://github.com/angular-ui/bootstrap/commit/868c0e2)), closes [#4423](https://github.com/angular-ui/bootstrap/issues/4423) [#4411](https://github.com/angular-ui/bootstrap/issues/4411)
+* **datepicker:** add custom class to year picker ([0ad7cb9](https://github.com/angular-ui/bootstrap/commit/0ad7cb9)), closes [#4558](https://github.com/angular-ui/bootstrap/issues/4558) [#4546](https://github.com/angular-ui/bootstrap/issues/4546)
+* **datepicker:** change to `$popup` ([65814f1](https://github.com/angular-ui/bootstrap/commit/65814f1))
+* **datepicker:** datepicker-popup nest in dropdown ([6b4267b](https://github.com/angular-ui/bootstrap/commit/6b4267b)), closes [#4489](https://github.com/angular-ui/bootstrap/issues/4489) [#4197](https://github.com/angular-ui/bootstrap/issues/4197)
+* **datepicker:** remove focus management on date selection by keyboard ([36ecf60](https://github.com/angular-ui/bootstrap/commit/36ecf60)), closes [#4409](https://github.com/angular-ui/bootstrap/issues/4409)
+* **dropdown:** ensure class is present in dropdown-menu ([92ab48e](https://github.com/angular-ui/bootstrap/commit/92ab48e)), closes [#4523](https://github.com/angular-ui/bootstrap/issues/4523) [#4442](https://github.com/angular-ui/bootstrap/issues/4442)
+* **dropdown:** restore deprecated directives ([e7c5879](https://github.com/angular-ui/bootstrap/commit/e7c5879)), closes [#4514](https://github.com/angular-ui/bootstrap/issues/4514)
+* **modal:** fix for conflicts with ngTouch module on mobile devices ([508aceb](https://github.com/angular-ui/bootstrap/commit/508aceb)), closes [#2280](https://github.com/angular-ui/bootstrap/issues/2280) [#4357](https://github.com/angular-ui/bootstrap/issues/4357)
+* **progressbar:** re-expose ProgressController ([5604e59](https://github.com/angular-ui/bootstrap/commit/5604e59)), closes [#4528](https://github.com/angular-ui/bootstrap/issues/4528)
+* **rating:** re-expose RatingController ([aede646](https://github.com/angular-ui/bootstrap/commit/aede646)), closes [#4529](https://github.com/angular-ui/bootstrap/issues/4529)
+* **tabs:** re-expose TabsetController ([435924f](https://github.com/angular-ui/bootstrap/commit/435924f)), closes [#4530](https://github.com/angular-ui/bootstrap/issues/4530)
+* **timepicker:** re-expose TimepickerController ([3aa9841](https://github.com/angular-ui/bootstrap/commit/3aa9841)), closes [#4531](https://github.com/angular-ui/bootstrap/issues/4531)
+* **tooltip:** add display block to style ([b413a22](https://github.com/angular-ui/bootstrap/commit/b413a22)), closes [#4363](https://github.com/angular-ui/bootstrap/issues/4363) [#4379](https://github.com/angular-ui/bootstrap/issues/4379)
+* **tooltip:** check for ttScope in $$postDigest ([01b9624](https://github.com/angular-ui/bootstrap/commit/01b9624)), closes [#4555](https://github.com/angular-ui/bootstrap/issues/4555) [#4552](https://github.com/angular-ui/bootstrap/issues/4552)
+* **tooltip:** correct flash of reposition ([8fee75d](https://github.com/angular-ui/bootstrap/commit/8fee75d)), closes [#4363](https://github.com/angular-ui/bootstrap/issues/4363) [#4195](https://github.com/angular-ui/bootstrap/issues/4195)
+* **tooltip:** do nothing if `$scope` doesn't exist ([1e039e8](https://github.com/angular-ui/bootstrap/commit/1e039e8)), closes [#4346](https://github.com/angular-ui/bootstrap/issues/4346) [#3347](https://github.com/angular-ui/bootstrap/issues/3347)
+* **tooltip:** fix binding to multiple triggers ([d6cda93](https://github.com/angular-ui/bootstrap/commit/d6cda93)), closes [#4371](https://github.com/angular-ui/bootstrap/issues/4371) [#4384](https://github.com/angular-ui/bootstrap/issues/4384)
+* **tooltip:** isOpen to work with expressions ([5f68280](https://github.com/angular-ui/bootstrap/commit/5f68280)), closes [#4380](https://github.com/angular-ui/bootstrap/issues/4380) [#4362](https://github.com/angular-ui/bootstrap/issues/4362)
+* **tooltip:** properly gc popupTimeout ([ff52f52](https://github.com/angular-ui/bootstrap/commit/ff52f52)), closes [#2786](https://github.com/angular-ui/bootstrap/issues/2786)
+* **tooltip:** set `visibility: hidden` to avoid flicker ([f7cb8bc](https://github.com/angular-ui/bootstrap/commit/f7cb8bc)), closes [#4342](https://github.com/angular-ui/bootstrap/issues/4342)
+
+### Features
+
+* **accordion:** use uib- prefix ([0328a76](https://github.com/angular-ui/bootstrap/commit/0328a76)), closes [#4389](https://github.com/angular-ui/bootstrap/issues/4389)
+* **accordion:** use uib- prefix ([298ec8c](https://github.com/angular-ui/bootstrap/commit/298ec8c)), closes [#4503](https://github.com/angular-ui/bootstrap/issues/4503)
+* **alert:** use uib- prefix ([5e3a87a](https://github.com/angular-ui/bootstrap/commit/5e3a87a)), closes [#4406](https://github.com/angular-ui/bootstrap/issues/4406)
+* **buttons:** use uib- prefix ([5a1c2c9](https://github.com/angular-ui/bootstrap/commit/5a1c2c9)), closes [#4445](https://github.com/angular-ui/bootstrap/issues/4445)
+* **carousel:** use uib- prefix ([2e5bfac](https://github.com/angular-ui/bootstrap/commit/2e5bfac)), closes [#4501](https://github.com/angular-ui/bootstrap/issues/4501)
+* **collapse:** convert to use `$animateCss` ([533a9f0](https://github.com/angular-ui/bootstrap/commit/533a9f0)), closes [#4257](https://github.com/angular-ui/bootstrap/issues/4257)
+* **collapse:** use uib- prefix ([9bdb32e](https://github.com/angular-ui/bootstrap/commit/9bdb32e)), closes [#4370](https://github.com/angular-ui/bootstrap/issues/4370)
+* **dateparser:** reset parsers when $locale.id changes ([d9a521a](https://github.com/angular-ui/bootstrap/commit/d9a521a)), closes [#4286](https://github.com/angular-ui/bootstrap/issues/4286) [#4425](https://github.com/angular-ui/bootstrap/issues/4425)
+* **dateparser:** use uib- prefix ([0fa851f](https://github.com/angular-ui/bootstrap/commit/0fa851f)), closes [#4504](https://github.com/angular-ui/bootstrap/issues/4504)
+* **datepicker:** add uib- prefix ([44354f6](https://github.com/angular-ui/bootstrap/commit/44354f6)), closes [#4509](https://github.com/angular-ui/bootstrap/issues/4509)
+* **dropdown:** uib- prefix ([5bc0851](https://github.com/angular-ui/bootstrap/commit/5bc0851)), closes [#4510](https://github.com/angular-ui/bootstrap/issues/4510)
+* **modal:** Added ability to add CSS class to top window ([bd38e8f](https://github.com/angular-ui/bootstrap/commit/bd38e8f)), closes [#2524](https://github.com/angular-ui/bootstrap/issues/2524)
+* **modal:** add uib- prefix ([8c7b9e4](https://github.com/angular-ui/bootstrap/commit/8c7b9e4)), closes [#4511](https://github.com/angular-ui/bootstrap/issues/4511)
+* **pagination:** add uib- prefix ([9aea856](https://github.com/angular-ui/bootstrap/commit/9aea856)), closes [#4536](https://github.com/angular-ui/bootstrap/issues/4536)
+* **position:** add uib- prefix ([6158091](https://github.com/angular-ui/bootstrap/commit/6158091)), closes [#4507](https://github.com/angular-ui/bootstrap/issues/4507)
+* **progressbar:** add `aria-labelledby` support ([e6f3b87](https://github.com/angular-ui/bootstrap/commit/e6f3b87)), closes [#4350](https://github.com/angular-ui/bootstrap/issues/4350) [#4347](https://github.com/angular-ui/bootstrap/issues/4347)
+* **rating:** add `aria-valuetext` attribute ([72de2d8](https://github.com/angular-ui/bootstrap/commit/72de2d8)), closes [#4349](https://github.com/angular-ui/bootstrap/issues/4349) [#4347](https://github.com/angular-ui/bootstrap/issues/4347)
+* **rating:** user uib- prefix ([377b4b7](https://github.com/angular-ui/bootstrap/commit/377b4b7)), closes [#4502](https://github.com/angular-ui/bootstrap/issues/4502)
+* **tabs:** use uib- prefix ([d25a8c2](https://github.com/angular-ui/bootstrap/commit/d25a8c2)), closes [#4449](https://github.com/angular-ui/bootstrap/issues/4449)
+* **timepicker:** use uib- prefix ([504e653](https://github.com/angular-ui/bootstrap/commit/504e653)), closes [#4505](https://github.com/angular-ui/bootstrap/issues/4505)
+* **tooltip:** add uib- prefix ([f8bc038](https://github.com/angular-ui/bootstrap/commit/f8bc038)), closes [#4515](https://github.com/angular-ui/bootstrap/issues/4515)
+* **tooltip:** allow custom closing delay ([5f7051b](https://github.com/angular-ui/bootstrap/commit/5f7051b)), closes [#3576](https://github.com/angular-ui/bootstrap/issues/3576)
+* **tooltip:** hide tooltip when `esc` is hit ([c08509a](https://github.com/angular-ui/bootstrap/commit/c08509a)), closes [#4367](https://github.com/angular-ui/bootstrap/issues/4367) [#4248](https://github.com/angular-ui/bootstrap/issues/4248)
+* **typeahead:** add `appendElementToId` ([fdf53e6](https://github.com/angular-ui/bootstrap/commit/fdf53e6)), closes [#4231](https://github.com/angular-ui/bootstrap/issues/4231) [#4497](https://github.com/angular-ui/bootstrap/issues/4497)
+* **typeahead:** add customClass support for dropdown ([fa1cdfc](https://github.com/angular-ui/bootstrap/commit/fa1cdfc)), closes [#4332](https://github.com/angular-ui/bootstrap/issues/4332) [#4410](https://github.com/angular-ui/bootstrap/issues/4410)
+* **typeahead:** add uib- prefix ([9e5e1a2](https://github.com/angular-ui/bootstrap/commit/9e5e1a2)), closes [#4542](https://github.com/angular-ui/bootstrap/issues/4542)
+
+### Reverts
+
+* **dropdown:** undo adding of `open` class on body ([6f9f1fc](https://github.com/angular-ui/bootstrap/commit/6f9f1fc))
+
+
+### BREAKING CHANGES
+
+* Removes focus on datepicker on selection of a date via keyboard for accessibility reasons
+
+
+<a name="0.13.4"></a>
+## [0.13.4](https://github.com/angular-ui/bootstrap/compare/0.13.3...0.13.4) (2015-09-03)
+
+
+### Bug Fixes
+
+* **accordion:** add custom open class support ([575eb85](https://github.com/angular-ui/bootstrap/commit/575eb85)), closes [#4198](https://github.com/angular-ui/bootstrap/issues/4198)
+* **datepicker:** ensure the original target is not in popup ([9b2f7ac](https://github.com/angular-ui/bootstrap/commit/9b2f7ac)), closes [#4316](https://github.com/angular-ui/bootstrap/issues/4316) [#4314](https://github.com/angular-ui/bootstrap/issues/4314)
+* **dropdown:** fix display when using with append-to-body ([bf63cef](https://github.com/angular-ui/bootstrap/commit/bf63cef)), closes [#4305](https://github.com/angular-ui/bootstrap/issues/4305) [#4240](https://github.com/angular-ui/bootstrap/issues/4240)
+* **dropdown:** fix up arrow nav support ([defcbbb](https://github.com/angular-ui/bootstrap/commit/defcbbb)), closes [#4330](https://github.com/angular-ui/bootstrap/issues/4330) [#4327](https://github.com/angular-ui/bootstrap/issues/4327)
+* **modal:** Wait for animation before focus. ([937a1f3](https://github.com/angular-ui/bootstrap/commit/937a1f3)), closes [#4300](https://github.com/angular-ui/bootstrap/issues/4300) [#4274](https://github.com/angular-ui/bootstrap/issues/4274)
+* **modal:** correctly remove custom class ([ba2ce24](https://github.com/angular-ui/bootstrap/commit/ba2ce24)), closes [#4175](https://github.com/angular-ui/bootstrap/issues/4175) [#4171](https://github.com/angular-ui/bootstrap/issues/4171)
+* **modal:** fix allowing promises to be resolved ([b1e98b1](https://github.com/angular-ui/bootstrap/commit/b1e98b1)), closes [#4310](https://github.com/angular-ui/bootstrap/issues/4310) [#4309](https://github.com/angular-ui/bootstrap/issues/4309)
+* **progress:** rename to avoid conflict ([07a938d](https://github.com/angular-ui/bootstrap/commit/07a938d)), closes [#4255](https://github.com/angular-ui/bootstrap/issues/4255)
+* **tabs:** ensure tab selection only occurs once ([7d3ba1e](https://github.com/angular-ui/bootstrap/commit/7d3ba1e)), closes [#3060](https://github.com/angular-ui/bootstrap/issues/3060) [#4230](https://github.com/angular-ui/bootstrap/issues/4230) [#2883](https://github.com/angular-ui/bootstrap/issues/2883)
+* **timepicker:** leave view alone if either input is invalid ([818f7e5](https://github.com/angular-ui/bootstrap/commit/818f7e5)), closes [#4160](https://github.com/angular-ui/bootstrap/issues/4160) [#3825](https://github.com/angular-ui/bootstrap/issues/3825)
+* **tooltip:** correctly position tooltip ([457f10c](https://github.com/angular-ui/bootstrap/commit/457f10c)), closes [#4311](https://github.com/angular-ui/bootstrap/issues/4311) [#4195](https://github.com/angular-ui/bootstrap/issues/4195)
+* **tooltip:** fix jshint error ([17cc39f](https://github.com/angular-ui/bootstrap/commit/17cc39f))
+* **tooltip:** properly gc timeout on toggle of disabled ([f8eab55](https://github.com/angular-ui/bootstrap/commit/f8eab55)), closes [#4210](https://github.com/angular-ui/bootstrap/issues/4210) [#4204](https://github.com/angular-ui/bootstrap/issues/4204)
+* **tooltip:** switch to use raw DOM event bindings ([7556bed](https://github.com/angular-ui/bootstrap/commit/7556bed)), closes [#4322](https://github.com/angular-ui/bootstrap/issues/4322) [#4060](https://github.com/angular-ui/bootstrap/issues/4060)
+* **typeahead:** add support for ngModelOptions getterSetter ([ccaa627](https://github.com/angular-ui/bootstrap/commit/ccaa627)), closes [#3865](https://github.com/angular-ui/bootstrap/issues/3865) [#3823](https://github.com/angular-ui/bootstrap/issues/3823)
+* **typeahead:** release references on destruction ([695db9d](https://github.com/angular-ui/bootstrap/commit/695db9d)), closes [#4299](https://github.com/angular-ui/bootstrap/issues/4299) [#4298](https://github.com/angular-ui/bootstrap/issues/4298)
+* **typeahead:** use ng-bind-html ([bb9fa1a](https://github.com/angular-ui/bootstrap/commit/bb9fa1a)), closes [#3463](https://github.com/angular-ui/bootstrap/issues/3463) [#4073](https://github.com/angular-ui/bootstrap/issues/4073)
+
+### Features
+
+* **accordion:** allow custom panel class ([5ee23a4](https://github.com/angular-ui/bootstrap/commit/5ee23a4)), closes [#4242](https://github.com/angular-ui/bootstrap/issues/4242) [#3968](https://github.com/angular-ui/bootstrap/issues/3968)
+* **accordion:** support spacebar to toggle group ([aa5a991](https://github.com/angular-ui/bootstrap/commit/aa5a991)), closes [#4319](https://github.com/angular-ui/bootstrap/issues/4319) [#4249](https://github.com/angular-ui/bootstrap/issues/4249)
+* **buttons:** allow toggling via spacebar when focused ([bdfb289](https://github.com/angular-ui/bootstrap/commit/bdfb289)), closes [#4252](https://github.com/angular-ui/bootstrap/issues/4252) [#4259](https://github.com/angular-ui/bootstrap/issues/4259)
+* **buttons:** hide nested inputs ([a06afe6](https://github.com/angular-ui/bootstrap/commit/a06afe6)), closes [#4282](https://github.com/angular-ui/bootstrap/issues/4282)
+* **carousel:** add model binding support to slide ([dac087e](https://github.com/angular-ui/bootstrap/commit/dac087e)), closes [#4202](https://github.com/angular-ui/bootstrap/issues/4202) [#4201](https://github.com/angular-ui/bootstrap/issues/4201)
+* **dateparser:** add support for the `h` format ([550fe20](https://github.com/angular-ui/bootstrap/commit/550fe20)), closes [#4220](https://github.com/angular-ui/bootstrap/issues/4220)
+* **datepicker:** disable today button if invalid ([71e0b8a](https://github.com/angular-ui/bootstrap/commit/71e0b8a)), closes [#4199](https://github.com/angular-ui/bootstrap/issues/4199) [#3988](https://github.com/angular-ui/bootstrap/issues/3988)
+* **modal:** complete modal open resolution in order ([1bba8b4](https://github.com/angular-ui/bootstrap/commit/1bba8b4)), closes [#2443](https://github.com/angular-ui/bootstrap/issues/2443) [#4302](https://github.com/angular-ui/bootstrap/issues/4302) [#2404](https://github.com/angular-ui/bootstrap/issues/2404)
+* **modal:** support multiple open classes ([3d01c59](https://github.com/angular-ui/bootstrap/commit/3d01c59)), closes [#4226](https://github.com/angular-ui/bootstrap/issues/4226) [#4184](https://github.com/angular-ui/bootstrap/issues/4184)
+* **pagination:** add `ngDisabled` support for the pager ([ba734b4](https://github.com/angular-ui/bootstrap/commit/ba734b4)), closes [#4217](https://github.com/angular-ui/bootstrap/issues/4217) [#2856](https://github.com/angular-ui/bootstrap/issues/2856)
+* **pagination:** add `templateUrl` support ([64b5289](https://github.com/angular-ui/bootstrap/commit/64b5289)), closes [#4162](https://github.com/angular-ui/bootstrap/issues/4162)
+* **tabs:** add support for `x-tab-heading` ([1abfd05](https://github.com/angular-ui/bootstrap/commit/1abfd05)), closes [#4166](https://github.com/angular-ui/bootstrap/issues/4166) [#1893](https://github.com/angular-ui/bootstrap/issues/1893)
+* **timepicker:** add `templateUrl` and `controllerAs` support ([639d511](https://github.com/angular-ui/bootstrap/commit/639d511)), closes [#4275](https://github.com/angular-ui/bootstrap/issues/4275) [#4284](https://github.com/angular-ui/bootstrap/issues/4284)
+* **tooltip:** expose isOpen property ([99b87cc](https://github.com/angular-ui/bootstrap/commit/99b87cc)), closes [#4179](https://github.com/angular-ui/bootstrap/issues/4179) [#2148](https://github.com/angular-ui/bootstrap/issues/2148) [#590](https://github.com/angular-ui/bootstrap/issues/590)
+* **typeahead:** add `typeaheadFocusOnSelect` ([b5ecda3](https://github.com/angular-ui/bootstrap/commit/b5ecda3)), closes [#4212](https://github.com/angular-ui/bootstrap/issues/4212) [#4211](https://github.com/angular-ui/bootstrap/issues/4211) [#4206](https://github.com/angular-ui/bootstrap/issues/4206)
+* **typeahead:** add custom popup template support ([4b02648](https://github.com/angular-ui/bootstrap/commit/4b02648)), closes [#4320](https://github.com/angular-ui/bootstrap/issues/4320) [#3774](https://github.com/angular-ui/bootstrap/issues/3774)
+
+
+### Breaking Changes
+
+* **buttons**
+  * hide nested `<input>` elements on `btn-radio` and `btn-checkbox` directives.
+
+  Fixes #3264
+  Closes #4282
+
+   ([a06afe6](https://github.com/angular-ui/bootstrap/commit/a06afe6))
+
+* **dropdown**
+  * when using `append-to-body`, both the `dropdown` and `open` classes are added to the `<body>` element.
+  * this differs from the existing behavior in that it will no longer toggle based on the existing `dropdown` directive element, but on the `body` element instead.
+
+  Fixes #4240
+  Closes #4305
+
+   ([bf63cef](https://github.com/angular-ui/bootstrap/commit/bf63cef))
+
+* **tooltip**
+  * Switch to use `addEventListener` and `removeEventListener` to prevent jqLite/jQuery bug where the events are swallowed on disabled elements
+  * this affects custom events, which must now be dispatched with `element[0].dispatchEvent(new Event('customEvent'))`, as opposed to `element.trigger('customEvent')`
+
+  Fixes #4060
+  Closes #4322
+
+   ([7556bed](https://github.com/angular-ui/bootstrap/commit/7556beda486f26b40fb860448316e8a32457e9e9))
+
+* **typeahead**
+  * for security reasons, only whitelisted HTML should be added.
+  * the typeahead match template now uses `ng-bind-html` instead of `bind-html-unsafe`.
+  * typeahead now uses the `$sce` service when `ngSanitize` is present and logs a warning if it is not.
+
+  Fixes #2884
+  Closes #3463
+  Closes #4073
+
+   ([bb9fa1a](https://github.com/angular-ui/bootstrap/commit/bb9fa1a))
+
+
+<a name"0.13.3"></a>
+### 0.13.3 (2015-08-09)
+
+
+#### Bug Fixes
+
+* **accordion:**
+  * add `open` class when expanded ([ead15e37](https://github.com/angular-ui/bootstrap/commit/ead15e37), closes [#4152](https://github.com/angular-ui/bootstrap/issues/4152), [#3419](https://github.com/angular-ui/bootstrap/issues/3419))
+  * revert to empty href ([b18dc8f9](https://github.com/angular-ui/bootstrap/commit/b18dc8f9), closes [#4104](https://github.com/angular-ui/bootstrap/issues/4104))
+* **buttons:**
+  * change to use `attrs.disabled` ([c9b0d0b0](https://github.com/angular-ui/bootstrap/commit/c9b0d0b0), closes [#4088](https://github.com/angular-ui/bootstrap/issues/4088))
+  * allow selection of undisabled button ([707fbf55](https://github.com/angular-ui/bootstrap/commit/707fbf55), closes [#4088](https://github.com/angular-ui/bootstrap/issues/4088))
+* **carousel:**
+  * fix animation direction ([8359d73f](https://github.com/angular-ui/bootstrap/commit/8359d73f), closes [#4092](https://github.com/angular-ui/bootstrap/issues/4092), [#4087](https://github.com/angular-ui/bootstrap/issues/4087))
+  * fix sorting of indicators ([8056368e](https://github.com/angular-ui/bootstrap/commit/8056368e), closes [#4071](https://github.com/angular-ui/bootstrap/issues/4071), [#3764](https://github.com/angular-ui/bootstrap/issues/3764))
+* **dateparser:** Support 12-hour format and AM/PM ([1ecd82ce](https://github.com/angular-ui/bootstrap/commit/1ecd82ce), closes [#4117](https://github.com/angular-ui/bootstrap/issues/4117))
+* **datepicker:**
+  * commit safe apply on destruction ([74a8be4c](https://github.com/angular-ui/bootstrap/commit/74a8be4c), closes [#4079](https://github.com/angular-ui/bootstrap/issues/4079), [#4076](https://github.com/angular-ui/bootstrap/issues/4076))
+  * change to `dateDisabled` ([5245ccad](https://github.com/angular-ui/bootstrap/commit/5245ccad), closes [#2773](https://github.com/angular-ui/bootstrap/issues/2773), [#4080](https://github.com/angular-ui/bootstrap/issues/4080))
+* **dropdown:** handle `keyboard-nav` correctly ([0b37f088](https://github.com/angular-ui/bootstrap/commit/0b37f088), closes [#4110](https://github.com/angular-ui/bootstrap/issues/4110), [#4091](https://github.com/angular-ui/bootstrap/issues/4091))
+* **modal:**
+  * skipping ESC handling for form inputs ([a05b9c1a](https://github.com/angular-ui/bootstrap/commit/a05b9c1a), closes [#3551](https://github.com/angular-ui/bootstrap/issues/3551), [#2544](https://github.com/angular-ui/bootstrap/issues/2544))
+  * add `$animateCss` support ([c7f19d58](https://github.com/angular-ui/bootstrap/commit/c7f19d58), closes [#4121](https://github.com/angular-ui/bootstrap/issues/4121), [#4119](https://github.com/angular-ui/bootstrap/issues/4119))
+  * fix test ([e60c3ff6](https://github.com/angular-ui/bootstrap/commit/e60c3ff6))
+  * dismiss modal on unschedule destruction ([3584061f](https://github.com/angular-ui/bootstrap/commit/3584061f), closes [#4097](https://github.com/angular-ui/bootstrap/issues/4097), [#3694](https://github.com/angular-ui/bootstrap/issues/3694))
+* **progressbar:** fix `min-width` for Bootstrap 3.2 ([8dc13be9](https://github.com/angular-ui/bootstrap/commit/8dc13be9), closes [#4081](https://github.com/angular-ui/bootstrap/issues/4081), [#2511](https://github.com/angular-ui/bootstrap/issues/2511))
+* **tooltip:**
+  * add safety to `$apply` ([22b16f01](https://github.com/angular-ui/bootstrap/commit/22b16f01), closes [#3943](https://github.com/angular-ui/bootstrap/issues/3943), [#4150](https://github.com/angular-ui/bootstrap/issues/4150), [#516](https://github.com/angular-ui/bootstrap/issues/516))
+  * tooltip w/ template position ([895a2281](https://github.com/angular-ui/bootstrap/commit/895a2281))
+  * prevent opening when `tooltipPopupDelay` is present ([12c527af](https://github.com/angular-ui/bootstrap/commit/12c527af), closes [#4098](https://github.com/angular-ui/bootstrap/issues/4098), [#3611](https://github.com/angular-ui/bootstrap/issues/3611))
+* **typeahead:** return `null` if empty ([c7d3a660](https://github.com/angular-ui/bootstrap/commit/c7d3a660), closes [#4078](https://github.com/angular-ui/bootstrap/issues/4078), [#3176](https://github.com/angular-ui/bootstrap/issues/3176))
+
+
+#### Features
+
+* **accordion:**
+  * add `controllerAs` support ([9865ee8e](https://github.com/angular-ui/bootstrap/commit/9865ee8e), closes [#4138](https://github.com/angular-ui/bootstrap/issues/4138))
+  * add `templateUrl` support ([f777c320](https://github.com/angular-ui/bootstrap/commit/f777c320), closes [#4084](https://github.com/angular-ui/bootstrap/issues/4084))
+* **alert:** add `templateUrl` support ([88a885ca](https://github.com/angular-ui/bootstrap/commit/88a885ca), closes [#4139](https://github.com/angular-ui/bootstrap/issues/4139))
+* **buttons:** add `controllerAs` support ([02872dc1](https://github.com/angular-ui/bootstrap/commit/02872dc1), closes [#4140](https://github.com/angular-ui/bootstrap/issues/4140))
+* **carousel:**
+  * add `templateUrl` support ([a29c8f20](https://github.com/angular-ui/bootstrap/commit/a29c8f20), closes [#4141](https://github.com/angular-ui/bootstrap/issues/4141))
+  * expose carousel controller via `controllerAs` ([bfec07e4](https://github.com/angular-ui/bootstrap/commit/bfec07e4), closes [#4131](https://github.com/angular-ui/bootstrap/issues/4131))
+* **datepicker:**
+  * allow custom templates ([e04b06d7](https://github.com/angular-ui/bootstrap/commit/e04b06d7), closes [#4157](https://github.com/angular-ui/bootstrap/issues/4157), [#1913](https://github.com/angular-ui/bootstrap/issues/1913))
+  * add `onOpenFocus` support ([68afc4c6](https://github.com/angular-ui/bootstrap/commit/68afc4c6), closes [#2303](https://github.com/angular-ui/bootstrap/issues/2303), [#2546](https://github.com/angular-ui/bootstrap/issues/2546), [#4146](https://github.com/angular-ui/bootstrap/issues/4146))
+  * add support for dynamic `min-mode` and `max-mode` ([f3d263e1](https://github.com/angular-ui/bootstrap/commit/f3d263e1), closes [#3843](https://github.com/angular-ui/bootstrap/issues/3843), [#2618](https://github.com/angular-ui/bootstrap/issues/2618))
+  * allow suppression of log error ([bab1d375](https://github.com/angular-ui/bootstrap/commit/bab1d375), closes [#3836](https://github.com/angular-ui/bootstrap/issues/3836), [#4115](https://github.com/angular-ui/bootstrap/issues/4115))
+* **docs:**
+  * add explanation of eye icon ([265d429b](https://github.com/angular-ui/bootstrap/commit/265d429b), closes [#4120](https://github.com/angular-ui/bootstrap/issues/4120))
+  * add ngAnimate Plunker support ([a8a22cff](https://github.com/angular-ui/bootstrap/commit/a8a22cff), closes [#3648](https://github.com/angular-ui/bootstrap/issues/3648), [#4072](https://github.com/angular-ui/bootstrap/issues/4072))
+* **modal:**
+  * add ability to change class on body ([5a28ff76](https://github.com/angular-ui/bootstrap/commit/5a28ff76), closes [#2633](https://github.com/angular-ui/bootstrap/issues/2633), [#4132](https://github.com/angular-ui/bootstrap/issues/4132))
+  * allow users to resolve with strings ([89368856](https://github.com/angular-ui/bootstrap/commit/89368856), closes [#2676](https://github.com/angular-ui/bootstrap/issues/2676), [#4124](https://github.com/angular-ui/bootstrap/issues/4124))
+* **pagination:**
+  * add classes to assist with styling ([b21c9abd](https://github.com/angular-ui/bootstrap/commit/b21c9abd), closes [#4130](https://github.com/angular-ui/bootstrap/issues/4130), [#4142](https://github.com/angular-ui/bootstrap/issues/4142))
+  * add `templateUrl` support ([a0e1c91c](https://github.com/angular-ui/bootstrap/commit/a0e1c91c), closes [#4137](https://github.com/angular-ui/bootstrap/issues/4137))
+* **timepicker:**
+  * add documentation for max/min ([87fc242d](https://github.com/angular-ui/bootstrap/commit/87fc242d))
+  * Added min/max attributes for timepicker. ([6c0010be](https://github.com/angular-ui/bootstrap/commit/6c0010be), closes [#4019](https://github.com/angular-ui/bootstrap/issues/4019))
+* **tooltip:**
+  * remove unnecessary `$digest` ([901a7c66](https://github.com/angular-ui/bootstrap/commit/901a7c66), closes [#4151](https://github.com/angular-ui/bootstrap/issues/4151))
+  * add multiple trigger support ([ca9196fa](https://github.com/angular-ui/bootstrap/commit/ca9196fa), closes [#3987](https://github.com/angular-ui/bootstrap/issues/3987), [#4077](https://github.com/angular-ui/bootstrap/issues/4077))
+
+
+#### Breaking Changes
+
+* add `open` class to accordion group when expanded
+
+Closes #4152
+Closes #3419
+
+ ([ead15e37](https://github.com/angular-ui/bootstrap/commit/ead15e37))
+* Allow the user to hit `esc` inside an element in a modal and not exit the modal if the event has been `defaultPrevented`
+
+Closes #3551
+Fixes #2544
+
+ ([a05b9c1a](https://github.com/angular-ui/bootstrap/commit/a05b9c1a))
+* Change validation key to `dateDisabled` to align better with Angular's convention
+
+Closes #2773
+Closes #4080
+
+ ([5245ccad](https://github.com/angular-ui/bootstrap/commit/5245ccad))
+
+
+<a name"0.13.2"></a>
+### 0.13.2 (2015-08-02)
+
+
+#### Bug Fixes
+
+* **accordion:** apply disabled style to accordion-header ([0643fd3e](https://github.com/angular-ui/bootstrap/commit/0643fd3e), closes [#3599](https://github.com/angular-ui/bootstrap/issues/3599), [#3233](https://github.com/angular-ui/bootstrap/issues/3233))
+* **buttons:** respect disabled attribute ([42e1af5c](https://github.com/angular-ui/bootstrap/commit/42e1af5c), closes [#4026](https://github.com/angular-ui/bootstrap/issues/4026), [#4013](https://github.com/angular-ui/bootstrap/issues/4013))
+* **carousel:**
+  * fix animations with 1.4 ([f45b4a4c](https://github.com/angular-ui/bootstrap/commit/f45b4a4c), closes [#3946](https://github.com/angular-ui/bootstrap/issues/3946), [#4041](https://github.com/angular-ui/bootstrap/issues/4041), [#3811](https://github.com/angular-ui/bootstrap/issues/3811))
+  * clear `currentSlide` when there are no slides ([0c78026b](https://github.com/angular-ui/bootstrap/commit/0c78026b), closes [#4021](https://github.com/angular-ui/bootstrap/issues/4021))
+* **dateparser:** add type and validity check ([4f1e03f1](https://github.com/angular-ui/bootstrap/commit/4f1e03f1), closes [#3701](https://github.com/angular-ui/bootstrap/issues/3701), [#3759](https://github.com/angular-ui/bootstrap/issues/3759), [#3933](https://github.com/angular-ui/bootstrap/issues/3933), [#3609](https://github.com/angular-ui/bootstrap/issues/3609), [#3713](https://github.com/angular-ui/bootstrap/issues/3713), [#3736](https://github.com/angular-ui/bootstrap/issues/3736), [#3875](https://github.com/angular-ui/bootstrap/issues/3875), [#3937](https://github.com/angular-ui/bootstrap/issues/3937), [#3976](https://github.com/angular-ui/bootstrap/issues/3976))
+* **datepicker:**
+  * change to contains ([9f73d240](https://github.com/angular-ui/bootstrap/commit/9f73d240), closes [#4066](https://github.com/angular-ui/bootstrap/issues/4066), [#3076](https://github.com/angular-ui/bootstrap/issues/3076))
+  * *BREAKING CHANGE* remove `new Date` fallback ([ab4580fd](https://github.com/angular-ui/bootstrap/commit/ab4580fd), closes [#2513](https://github.com/angular-ui/bootstrap/issues/2513), [#3294](https://github.com/angular-ui/bootstrap/issues/3294), [#3344](https://github.com/angular-ui/bootstrap/issues/3344), [#3682](https://github.com/angular-ui/bootstrap/issues/3682), [#4092](https://github.com/angular-ui/bootstrap/issues/4092), [#1289](https://github.com/angular-ui/bootstrap/issues/1289), [#2446](https://github.com/angular-ui/bootstrap/issues/2446), [#3037](https://github.com/angular-ui/bootstrap/issues/3037), [#3104](https://github.com/angular-ui/bootstrap/issues/3104), [#3196](https://github.com/angular-ui/bootstrap/issues/3196), [#3206](https://github.com/angular-ui/bootstrap/issues/3206), [#3342](https://github.com/angular-ui/bootstrap/issues/3342), [#3617](https://github.com/angular-ui/bootstrap/issues/3617), [#3644](https://github.com/angular-ui/bootstrap/issues/3644))
+  * ensure `initDate` is on an object ([577b2a2a](https://github.com/angular-ui/bootstrap/commit/577b2a2a), closes [#3625](https://github.com/angular-ui/bootstrap/issues/3625))
+  * change to higher max date ([32e73280](https://github.com/angular-ui/bootstrap/commit/32e73280), closes [#4042](https://github.com/angular-ui/bootstrap/issues/4042))
+  * fix validation with `ngRequired` ([fe0d954a](https://github.com/angular-ui/bootstrap/commit/fe0d954a), closes [#4002](https://github.com/angular-ui/bootstrap/issues/4002), [#3862](https://github.com/angular-ui/bootstrap/issues/3862))
+  * set to `null` if not present ([a65a5fa1](https://github.com/angular-ui/bootstrap/commit/a65a5fa1), closes [#4014](https://github.com/angular-ui/bootstrap/issues/4014))
+* **dropdown:** add safety check for setIsOpen ([60e43160](https://github.com/angular-ui/bootstrap/commit/60e43160), closes [#4030](https://github.com/angular-ui/bootstrap/issues/4030))
+* **modal:**
+  * properly garbage collect DOM node ([1e8297be](https://github.com/angular-ui/bootstrap/commit/1e8297be), closes [#2875](https://github.com/angular-ui/bootstrap/issues/2875))
+  * fix `bindToController` implementation ([811bf96e](https://github.com/angular-ui/bootstrap/commit/811bf96e), closes [#4054](https://github.com/angular-ui/bootstrap/issues/4054), [#4051](https://github.com/angular-ui/bootstrap/issues/4051))
+  * animate backdrop concurrently with window ([c55ee4f5](https://github.com/angular-ui/bootstrap/commit/c55ee4f5), closes [#4039](https://github.com/angular-ui/bootstrap/issues/4039), [#4036](https://github.com/angular-ui/bootstrap/issues/4036))
+* **progressbar:**
+  * use more visible color ([1afc5d1d](https://github.com/angular-ui/bootstrap/commit/1afc5d1d), closes [#4044](https://github.com/angular-ui/bootstrap/issues/4044))
+  * allow max width of 100% ([2e9177e5](https://github.com/angular-ui/bootstrap/commit/2e9177e5), closes [#4027](https://github.com/angular-ui/bootstrap/issues/4027), [#4018](https://github.com/angular-ui/bootstrap/issues/4018))
+* **tooltip:**
+  * update tooltip placement dynamically ([13df1c93](https://github.com/angular-ui/bootstrap/commit/13df1c93), closes [#3980](https://github.com/angular-ui/bootstrap/issues/3980), [#3978](https://github.com/angular-ui/bootstrap/issues/3978))
+  * prevent 1px shift in Webkit/Blink ([632aa820](https://github.com/angular-ui/bootstrap/commit/632aa820), closes [#3964](https://github.com/angular-ui/bootstrap/issues/3964))
+* **typeahead:**
+  * reset matches if enter is hit ([25704838](https://github.com/angular-ui/bootstrap/commit/25704838), closes [#4063](https://github.com/angular-ui/bootstrap/issues/4063), [#3545](https://github.com/angular-ui/bootstrap/issues/3545))
+  * only reset matches if matches are present ([97e077e1](https://github.com/angular-ui/bootstrap/commit/97e077e1), closes [#3119](https://github.com/angular-ui/bootstrap/issues/3119))
+
+
+#### Features
+
+* **build:** add support for npm publishing ([27f7ca26](https://github.com/angular-ui/bootstrap/commit/27f7ca26), closes [#3108](https://github.com/angular-ui/bootstrap/issues/3108))
+* **modal:** trap focus in modal for tabbing ([a028d2aa](https://github.com/angular-ui/bootstrap/commit/a028d2aa), closes [#3689](https://github.com/angular-ui/bootstrap/issues/3689), [#4004](https://github.com/angular-ui/bootstrap/issues/4004), [#738](https://github.com/angular-ui/bootstrap/issues/738))
+* **popover:** add custom template support ([a9d3d253](https://github.com/angular-ui/bootstrap/commit/a9d3d253), closes [#4056](https://github.com/angular-ui/bootstrap/issues/4056), [#4057](https://github.com/angular-ui/bootstrap/issues/4057))
+* **rating:** add title support for stars ([713c8487](https://github.com/angular-ui/bootstrap/commit/713c8487), closes [#3621](https://github.com/angular-ui/bootstrap/issues/3621))
+* **typeahead:**
+  * add `noResults` indicator binding ([647cdd93](https://github.com/angular-ui/bootstrap/commit/647cdd93), closes [#2016](https://github.com/angular-ui/bootstrap/issues/2016), [#2792](https://github.com/angular-ui/bootstrap/issues/2792), [#4068](https://github.com/angular-ui/bootstrap/issues/4068))
+  * add `typeaheadSelectOnExact` support ([277b30ca](https://github.com/angular-ui/bootstrap/commit/277b30ca), closes [#3365](https://github.com/angular-ui/bootstrap/issues/3365), [#3310](https://github.com/angular-ui/bootstrap/issues/3310))
+
+
+<a name"0.13.1"></a>
+### 0.13.1 (2015-07-23)
+
+
+#### Bug Fixes
+
+* **accordion:** add CSP compliance for accordion & typeahead ([fb302c60](https://github.com/angular-ui/bootstrap/commit/fb302c60), closes [#3909](https://github.com/angular-ui/bootstrap/issues/3909), [#3904](https://github.com/angular-ui/bootstrap/issues/3904))
+* **alert:**
+  * adjust check for close attribute ([13a0354f](https://github.com/angular-ui/bootstrap/commit/13a0354f), closes [#3864](https://github.com/angular-ui/bootstrap/issues/3864), [#3890](https://github.com/angular-ui/bootstrap/issues/3890), [#3848](https://github.com/angular-ui/bootstrap/issues/3848))
+  * rename alert-dismissable to alert-dismissible ([d631af5a](https://github.com/angular-ui/bootstrap/commit/d631af5a))
+* **carousel:**
+  * change to avoid references to debug info ([ca07ad7c](https://github.com/angular-ui/bootstrap/commit/ca07ad7c), closes [#3795](https://github.com/angular-ui/bootstrap/issues/3795), [#3794](https://github.com/angular-ui/bootstrap/issues/3794))
+  * ensure there are slides present ([115d490a](https://github.com/angular-ui/bootstrap/commit/115d490a), closes [#3755](https://github.com/angular-ui/bootstrap/issues/3755))
+  * disable transition until animation completes ([ef45ecf8](https://github.com/angular-ui/bootstrap/commit/ef45ecf8), closes [#3729](https://github.com/angular-ui/bootstrap/issues/3729), [#3757](https://github.com/angular-ui/bootstrap/issues/3757))
+* **collapse:** fix occasional flickering ([ede9ea46](https://github.com/angular-ui/bootstrap/commit/ede9ea46), closes [#3804](https://github.com/angular-ui/bootstrap/issues/3804), [#3801](https://github.com/angular-ui/bootstrap/issues/3801))
+* **datepicker:**
+  * change to min width cells ([5567c432](https://github.com/angular-ui/bootstrap/commit/5567c432), closes [#4000](https://github.com/angular-ui/bootstrap/issues/4000), [#3941](https://github.com/angular-ui/bootstrap/issues/3941))
+  * fix OS dependent time zone issue ([f1412014](https://github.com/angular-ui/bootstrap/commit/f1412014), closes [#3079](https://github.com/angular-ui/bootstrap/issues/3079))
+  * Apply custom class to month ([eb3b32ec](https://github.com/angular-ui/bootstrap/commit/eb3b32ec), closes [#3863](https://github.com/angular-ui/bootstrap/issues/3863))
+  * check if getter.assign is function ([ed10899d](https://github.com/angular-ui/bootstrap/commit/ed10899d), closes [#3155](https://github.com/angular-ui/bootstrap/issues/3155), [#3345](https://github.com/angular-ui/bootstrap/issues/3345), [#3719](https://github.com/angular-ui/bootstrap/issues/3719))
+* **dropdown:**
+  * do not autoclose with outsideClick and append to body ([cc66a068](https://github.com/angular-ui/bootstrap/commit/cc66a068), closes [#3792](https://github.com/angular-ui/bootstrap/issues/3792), [#3645](https://github.com/angular-ui/bootstrap/issues/3645))
+  * avoid matching 138 & 140 ([41ebd984](https://github.com/angular-ui/bootstrap/commit/41ebd984))
+  * align when using dropdown-menu-body ([2332f14d](https://github.com/angular-ui/bootstrap/commit/2332f14d), closes [#3913](https://github.com/angular-ui/bootstrap/issues/3913), [#3820](https://github.com/angular-ui/bootstrap/issues/3820))
+  * call toggle after animation ([054341b7](https://github.com/angular-ui/bootstrap/commit/054341b7), closes [#3513](https://github.com/angular-ui/bootstrap/issues/3513), [#3655](https://github.com/angular-ui/bootstrap/issues/3655), [#3511](https://github.com/angular-ui/bootstrap/issues/3511))
+  * do not close on $locationChangeSuccess ([e5a1e88f](https://github.com/angular-ui/bootstrap/commit/e5a1e88f), closes [#3683](https://github.com/angular-ui/bootstrap/issues/3683), [#3704](https://github.com/angular-ui/bootstrap/issues/3704))
+* **modal:**
+  * backdrop animation on AngularJS 1.4 ([158d2676](https://github.com/angular-ui/bootstrap/commit/158d2676), closes [#3896](https://github.com/angular-ui/bootstrap/issues/3896))
+  * closing breaks on missing scope, 1.4 ([0286828b](https://github.com/angular-ui/bootstrap/commit/0286828b), closes [#3787](https://github.com/angular-ui/bootstrap/issues/3787), [#3806](https://github.com/angular-ui/bootstrap/issues/3806), [#3873](https://github.com/angular-ui/bootstrap/issues/3873), [#3888](https://github.com/angular-ui/bootstrap/issues/3888))
+  * remove illegal character ([dd4f3cc8](https://github.com/angular-ui/bootstrap/commit/dd4f3cc8), closes [#3893](https://github.com/angular-ui/bootstrap/issues/3893), [#3892](https://github.com/angular-ui/bootstrap/issues/3892))
+  * focus on body if element disappears ([988336cc](https://github.com/angular-ui/bootstrap/commit/988336cc), closes [#3653](https://github.com/angular-ui/bootstrap/issues/3653), [#3639](https://github.com/angular-ui/bootstrap/issues/3639))
+* **progressbar:** use max value on stacked progress bar ([36e0f0ea](https://github.com/angular-ui/bootstrap/commit/36e0f0ea), closes [#3830](https://github.com/angular-ui/bootstrap/issues/3830), [#3618](https://github.com/angular-ui/bootstrap/issues/3618))
+* **rating:** Set rating to 0 when same value is selected ([dbceec76](https://github.com/angular-ui/bootstrap/commit/dbceec76), closes [#3963](https://github.com/angular-ui/bootstrap/issues/3963), [#3246](https://github.com/angular-ui/bootstrap/issues/3246))
+* **tabs:** fix empty href ([2b27dcbf](https://github.com/angular-ui/bootstrap/commit/2b27dcbf), closes [#3799](https://github.com/angular-ui/bootstrap/issues/3799))
+* **typeahead:**
+  * select match on tab for iOS webview ([5b37bb8b](https://github.com/angular-ui/bootstrap/commit/5b37bb8b), closes [#3762](https://github.com/angular-ui/bootstrap/issues/3762), [#3699](https://github.com/angular-ui/bootstrap/issues/3699))
+  * don't close popup on right click ([7d1c4600](https://github.com/angular-ui/bootstrap/commit/7d1c4600), closes [#3975](https://github.com/angular-ui/bootstrap/issues/3975), [#3973](https://github.com/angular-ui/bootstrap/issues/3973))
+  * close dropdown on tab with no selection ([493510d0](https://github.com/angular-ui/bootstrap/commit/493510d0), closes [#3340](https://github.com/angular-ui/bootstrap/issues/3340))
+  * do not execute unnecessary $digest ([0d96221f](https://github.com/angular-ui/bootstrap/commit/0d96221f), closes [#2652](https://github.com/angular-ui/bootstrap/issues/2652), [#3791](https://github.com/angular-ui/bootstrap/issues/3791))
+  * add href to show cursor as pointer ([195e520e](https://github.com/angular-ui/bootstrap/commit/195e520e), closes [#3649](https://github.com/angular-ui/bootstrap/issues/3649))
+
+
+#### Features
+
+* **alert:** pass $event to close() ([44e06425](https://github.com/angular-ui/bootstrap/commit/44e06425), closes [#3828](https://github.com/angular-ui/bootstrap/issues/3828), [#3827](https://github.com/angular-ui/bootstrap/issues/3827))
+* **carousel:** add `noWrap` option to prevent re-cycling of slides ([7fb3840f](https://github.com/angular-ui/bootstrap/commit/7fb3840f), closes [#3462](https://github.com/angular-ui/bootstrap/issues/3462), [#3397](https://github.com/angular-ui/bootstrap/issues/3397))
+* **collapse:** add accessibility support ([92551342](https://github.com/angular-ui/bootstrap/commit/92551342), closes [#3920](https://github.com/angular-ui/bootstrap/issues/3920))
+* **dropdown:**
+  * add dropdown classes dynamically ([4af83ade](https://github.com/angular-ui/bootstrap/commit/4af83ade), closes [#3984](https://github.com/angular-ui/bootstrap/issues/3984), [#3986](https://github.com/angular-ui/bootstrap/issues/3986))
+  * add accessibility attributes ([14689e05](https://github.com/angular-ui/bootstrap/commit/14689e05), closes [#3951](https://github.com/angular-ui/bootstrap/issues/3951))
+  * add keynav support to dropdown ([62359370](https://github.com/angular-ui/bootstrap/commit/62359370), closes [#3685](https://github.com/angular-ui/bootstrap/issues/3685), [#3212](https://github.com/angular-ui/bootstrap/issues/3212), [#1228](https://github.com/angular-ui/bootstrap/issues/1228))
+  * support optional templates for dropdown menus ([83c4266c](https://github.com/angular-ui/bootstrap/commit/83c4266c))
+* **modal:** add support for bindToController ([8adfc833](https://github.com/angular-ui/bootstrap/commit/8adfc833), closes [#3965](https://github.com/angular-ui/bootstrap/issues/3965), [#3404](https://github.com/angular-ui/bootstrap/issues/3404))
+* **pagination:** add support for `ng-disabled` ([f6edfa5d](https://github.com/angular-ui/bootstrap/commit/f6edfa5d), closes [#3956](https://github.com/angular-ui/bootstrap/issues/3956))
+* **timepicker:** add `showSpinner` flag ([1f760eb3](https://github.com/angular-ui/bootstrap/commit/1f760eb3))
+* **typeahead:**
+  * add 'select on blur' option. ([68cac59a](https://github.com/angular-ui/bootstrap/commit/68cac59a), closes [#3445](https://github.com/angular-ui/bootstrap/issues/3445))
+  * popup position ([86bfec19](https://github.com/angular-ui/bootstrap/commit/86bfec19), closes [#3874](https://github.com/angular-ui/bootstrap/issues/3874))
+  * handles min-length of 0 ([a5a25141](https://github.com/angular-ui/bootstrap/commit/a5a25141), closes [#3600](https://github.com/angular-ui/bootstrap/issues/3600))
+
+
+<a name="0.13.0"></a>
+## 0.13.0 (2015-05-02)
+
+
+#### Bug Fixes
+
+* **accordion:**
+  * Made accordion heading tab-able for IE9-10 ([6abad509](https://github.com/angular-ui/bootstrap/commit/6abad509cd4d44c3ca432f2f21c9ecea0a206b53))
+  * noop for href in header to prevent page refresh with nested buttons canceling ev ([9ca4ec39](https://github.com/angular-ui/bootstrap/commit/9ca4ec399be0e0e8f6c3fe6fd924a7d94ce669b5))
+* **buttons:** add unit tests for buttons ([9468d723](https://github.com/angular-ui/bootstrap/commit/9468d7239dd6eed4a3a2945f6761f7a2fa97222b), closes [#3030](https://github.com/angular-ui/bootstrap/issues/3030))
+* **carousel:** respect the order of the slides ([b5f220fa](https://github.com/angular-ui/bootstrap/commit/b5f220fa8483f5743ba6ab3610f5064bf5c71be7), closes [#488](https://github.com/angular-ui/bootstrap/issues/488))
+* **changelog:** add comment on breaking change ([f02c1bbb](https://github.com/angular-ui/bootstrap/commit/f02c1bbbf7777bee9cbb4a038730fb475337a2c5), closes [#2675](https://github.com/angular-ui/bootstrap/issues/2675))
+* **dateparser:** add extra validation constraint to days ([c19b8879](https://github.com/angular-ui/bootstrap/commit/c19b8879e902e8753b4077e7983ec629242436fc))
+* **datepicker:**
+  * week count issues ([39e5fd3e](https://github.com/angular-ui/bootstrap/commit/39e5fd3e4981f311d237d21c37a89cde9f42f0d6), closes [#2506](https://github.com/angular-ui/bootstrap/issues/2506), [#3120](https://github.com/angular-ui/bootstrap/issues/3120), [#2306](https://github.com/angular-ui/bootstrap/issues/2306))
+  * make 'show-weeks' work on datepickerPopup ([d0cc7284](https://github.com/angular-ui/bootstrap/commit/d0cc72841b9641b768cc5eb184de2dbbaa804e2d), closes [#3143](https://github.com/angular-ui/bootstrap/issues/3143), [#3149](https://github.com/angular-ui/bootstrap/issues/3149))
+  * datepicker-popup compatibility with ngModelOptions ([d024dd77](https://github.com/angular-ui/bootstrap/commit/d024dd77ed6a20983bea5b90b75481c93f17980f), closes [#3349](https://github.com/angular-ui/bootstrap/issues/3349))
+  * disable title button when in max mode ([35b8512a](https://github.com/angular-ui/bootstrap/commit/35b8512ac7949eba7d432760f83748bb2bb893c1), closes [#3012](https://github.com/angular-ui/bootstrap/issues/3012))
+  * add shortcutPropagation to datepickerPopup ([13bd516c](https://github.com/angular-ui/bootstrap/commit/13bd516cfcc1b2ee940112675830f7ce3d93ea4f))
+  * fixed shortcut event kill by adding option ([89ab4580](https://github.com/angular-ui/bootstrap/commit/89ab4580cd3d0bbdf63e02fbebe2cb3a9f2616dd))
+  * fix initDate implementation in datepicker ([98e2bdfc](https://github.com/angular-ui/bootstrap/commit/98e2bdfc8b4dd108acdf3fac75a795675889bbc7))
+  * Fix init-date not applying on datepicker-popup ([c5b63ded](https://github.com/angular-ui/bootstrap/commit/c5b63ded0aebd7ae80f238bd0a33f1d9c0746dba))
+  * Make datepicker respect dateFormat inside ng-if ([2c2dba6d](https://github.com/angular-ui/bootstrap/commit/2c2dba6d145c95500efe7f6be6248d56ae1aebee))
+  * `ng-model` value can be a timestamp ([d253208b](https://github.com/angular-ui/bootstrap/commit/d253208bd7ebbd6209c6a25f70e010123198fcd7), closes [#2345](https://github.com/angular-ui/bootstrap/issues/2345))
+  * Parse date from $viewValue instead of $modelValue ([0ecf7faa](https://github.com/angular-ui/bootstrap/commit/0ecf7faad3b340e171e5c8ca17a17597fa6e6596))
+  * don't stop ESC propagation unless dropdown is open ([c2e5b284](https://github.com/angular-ui/bootstrap/commit/c2e5b284a31fc992b8230b89dc98ed757d155493), closes [#3096](https://github.com/angular-ui/bootstrap/issues/3096), [#3179](https://github.com/angular-ui/bootstrap/issues/3179))
+  * date formatting when using angular 1.3 fixes #2659 ([23936f9f](https://github.com/angular-ui/bootstrap/commit/23936f9f6ec7170b56c7f13345ae022c74fa3034), closes [#3293](https://github.com/angular-ui/bootstrap/issues/3293), [#3279](https://github.com/angular-ui/bootstrap/issues/3279), [#2440](https://github.com/angular-ui/bootstrap/issues/2440), [#2932](https://github.com/angular-ui/bootstrap/issues/2932), [#3074](https://github.com/angular-ui/bootstrap/issues/3074), [#2943](https://github.com/angular-ui/bootstrap/issues/2943), [#2733](https://github.com/angular-ui/bootstrap/issues/2733), [#3047](https://github.com/angular-ui/bootstrap/issues/3047), [#2659](https://github.com/angular-ui/bootstrap/issues/2659), [#2681](https://github.com/angular-ui/bootstrap/issues/2681))
+  * date formatting when using angular 1.3 fixes #2659 ([5f9afe5a](https://github.com/angular-ui/bootstrap/commit/5f9afe5a86af0e207eaacd6a9b1f202fd78d7009))
+* **demo:** Modify the demo app to play nice with Angular 1.3 ([aa0b6392](https://github.com/angular-ui/bootstrap/commit/aa0b6392db57d436d7c203cf05555d708c945322), closes [#3098](https://github.com/angular-ui/bootstrap/issues/3098))
+* **dropdown:** Fix $digest:inprog on dropdown dismissal ([4a06adba](https://github.com/angular-ui/bootstrap/commit/4a06adbac6c1c1fa6b0182ca9bd7335eda89c43f), closes [#3274](https://github.com/angular-ui/bootstrap/issues/3274))
+* **grunt:** fix typo in gruntfile ([f0cadb1f](https://github.com/angular-ui/bootstrap/commit/f0cadb1f1a6b8d994c2df3313a2121e92a36bddb), closes [#3589](https://github.com/angular-ui/bootstrap/issues/3589))
+* **modal:**
+  * Use attribute observe and add a render promise. ([99af5f8a](https://github.com/angular-ui/bootstrap/commit/99af5f8a369b13b018ec1e592d82a1a140cbb6bb))
+  * fix minor grammar error ([22a21448](https://github.com/angular-ui/bootstrap/commit/22a21448cbad1448bd4541bd0ce3fc8d3515943d), closes [#3519](https://github.com/angular-ui/bootstrap/issues/3519))
+  * Fix focus when the dialog is close or cancelled ([e6b105ae](https://github.com/angular-ui/bootstrap/commit/e6b105ae39bcbcf468c3e32057c6acb5ab50d4ce), closes [#2888](https://github.com/angular-ui/bootstrap/issues/2888))
+  * allow for custom user modal sizes ([85eeb954](https://github.com/angular-ui/bootstrap/commit/85eeb95428e0dd367cf3e251f2d01fc8dc899dd4), closes [#3429](https://github.com/angular-ui/bootstrap/issues/3429), [#3431](https://github.com/angular-ui/bootstrap/issues/3431))
+  * Autofocus corrects the second time that the modal is open ([e5f5f75b](https://github.com/angular-ui/bootstrap/commit/e5f5f75b370b6d4806da87bec575b7084e30c520), closes [#2802](https://github.com/angular-ui/bootstrap/issues/2802))
+  * fix messages on modal test failed ([ab919f9f](https://github.com/angular-ui/bootstrap/commit/ab919f9f89aeaaa336b5d3fe1aed1e0617b5a482))
+* **pagination:**
+  * remove focus from prior clicked elements ([33269bb6](https://github.com/angular-ui/bootstrap/commit/33269bb6b444cdca18e08063814d39c5ef502589), closes [#3488](https://github.com/angular-ui/bootstrap/issues/3488), [#3486](https://github.com/angular-ui/bootstrap/issues/3486))
+  * fixes issue when init called after watch triggered ([26b40903](https://github.com/angular-ui/bootstrap/commit/26b40903abf012b5d3d35154d6210119ac9a76d4), closes [#2257](https://github.com/angular-ui/bootstrap/issues/2257), [#2227](https://github.com/angular-ui/bootstrap/issues/2227))
+* **popover:**
+  * prevent wrong positioning from title ([c8156c7e](https://github.com/angular-ui/bootstrap/commit/c8156c7e21d0f3a61fc19d59644ae24c423eb5c6), closes [#3518](https://github.com/angular-ui/bootstrap/issues/3518))
+  * animations with ngAnimate ([c2ace472](https://github.com/angular-ui/bootstrap/commit/c2ace47225ecb337328a16d2c95744e0d37ce80f), closes [#3509](https://github.com/angular-ui/bootstrap/issues/3509), [#3375](https://github.com/angular-ui/bootstrap/issues/3375), [#3506](https://github.com/angular-ui/bootstrap/issues/3506))
+  * make it work with ngAnimate ([461087b5](https://github.com/angular-ui/bootstrap/commit/461087b5ff360e1d06d6724375ab29169a89fcf2), closes [#3482](https://github.com/angular-ui/bootstrap/issues/3482), [#3375](https://github.com/angular-ui/bootstrap/issues/3375))
+* **progressbar:** limit max width to 100% ([489961e1](https://github.com/angular-ui/bootstrap/commit/489961e1a0036ddab4e719a772382209a595f163), closes [#3005](https://github.com/angular-ui/bootstrap/issues/3005))
+* **tab:** change to `disable` attribute ([4bfae223](https://github.com/angular-ui/bootstrap/commit/4bfae2238d08d7edea8e6dfe99051192a16d6587), closes [#2677](https://github.com/angular-ui/bootstrap/issues/2677))
+* **timepicker:**
+  * move render logic to formatter ([b4bbc019](https://github.com/angular-ui/bootstrap/commit/b4bbc0198284d90085bd85840dffd030345d5211), closes [#3160](https://github.com/angular-ui/bootstrap/issues/3160), [#3427](https://github.com/angular-ui/bootstrap/issues/3427))
+  * remove ng-mousewheel binding ([a726b7cd](https://github.com/angular-ui/bootstrap/commit/a726b7cd47d417ed656aef3af012e7b6c7b00bf4), closes [#3442](https://github.com/angular-ui/bootstrap/issues/3442))
+  * fix widths of inputs when inside form-inline ([8e89440b](https://github.com/angular-ui/bootstrap/commit/8e89440ba86d26d74ed799843cde7f9f2bf26c0b))
+  * Stringify pad return when value >= 10 ([405dab65](https://github.com/angular-ui/bootstrap/commit/405dab65f72f5bed488eb8f5dfa5a1a848c4a606))
+* **tooltip:**
+  * template type should respect popup class ([6af627a8](https://github.com/angular-ui/bootstrap/commit/6af627a8edcbce0370ca2d90f9a575cd6770f6c1), closes [#3569](https://github.com/angular-ui/bootstrap/issues/3569))
+  * tooltip-html should not open if empty ([34044a77](https://github.com/angular-ui/bootstrap/commit/34044a77070bc809220e2ed6b628393889c40b86), closes [#3563](https://github.com/angular-ui/bootstrap/issues/3563))
+  * use correct prefix for -template ([9ca9d7f5](https://github.com/angular-ui/bootstrap/commit/9ca9d7f5263d8d5e0a9de18c2b75f64aca7c5255), closes [#3498](https://github.com/angular-ui/bootstrap/issues/3498), [#3473](https://github.com/angular-ui/bootstrap/issues/3473))
+  * Fix for issue #3167 ([87a36076](https://github.com/angular-ui/bootstrap/commit/87a3607632cae03ead57b377bb91ca27610e7730))
+* **typeahead:**
+  * Fix for memory-leak in typeahead ([b5a80c08](https://github.com/angular-ui/bootstrap/commit/b5a80c08f2364db2170766366cc7433661e737ae))
+  * reset 'parse' validation key ([c0a9c707](https://github.com/angular-ui/bootstrap/commit/c0a9c707903fa3dfc662887cd348ee2b0bf13f85), closes [#3166](https://github.com/angular-ui/bootstrap/issues/3166))
+  * resolve property length of undefined error ([950c22cd](https://github.com/angular-ui/bootstrap/commit/950c22cdab3d0b3479a0d0515ed64e57c9ff046b), closes [#2999](https://github.com/angular-ui/bootstrap/issues/2999), [#3178](https://github.com/angular-ui/bootstrap/issues/3178))
+  * set validity if model is set manually ([b0044433](https://github.com/angular-ui/bootstrap/commit/b004443371d75bb61e9a17a00a58b485c1279aee), closes [#3318](https://github.com/angular-ui/bootstrap/issues/3318))
+  * $compile match template after adding to DOM ([03446c56](https://github.com/angular-ui/bootstrap/commit/03446c56335d5ee0970f9730af215fea1dd53f48))
+
+
+#### Features
+
+* **dateparser:**
+  * Add support for HH, H, mm, m, ss, s formats ([971a1b57](https://github.com/angular-ui/bootstrap/commit/971a1b57394c1e1088564e0809c1341620586aa0), closes [#2509](https://github.com/angular-ui/bootstrap/issues/2509), [#3159](https://github.com/angular-ui/bootstrap/issues/3159), [#3417](https://github.com/angular-ui/bootstrap/issues/3417))
+  * add support for milliseconds ([82cb637d](https://github.com/angular-ui/bootstrap/commit/82cb637dd12288d9fa0d42783f672fc71b94ffda), closes [#3537](https://github.com/angular-ui/bootstrap/issues/3537))
+* **datepicker:**
+  * support HTML5 month input type ([aef8953c](https://github.com/angular-ui/bootstrap/commit/aef8953c792066c008d8ce97918153f756a39112), closes [#3499](https://github.com/angular-ui/bootstrap/issues/3499))
+  * support HTML5 date input type ([1a9e88fe](https://github.com/angular-ui/bootstrap/commit/1a9e88fe9e6a078943273012429788e742f8ebbd), closes [#3499](https://github.com/angular-ui/bootstrap/issues/3499))
+  * Add custom class to specific days via outside logic ([0bcd30c4](https://github.com/angular-ui/bootstrap/commit/0bcd30c4a6d65763e1c4d1b6820a4537a11e95ee))
+* **dropdown:**
+  * Dropdown append-to-body ([dfe9854b](https://github.com/angular-ui/bootstrap/commit/dfe9854be3d0ae82f361cefec19a6f692aa41591), closes [#3411](https://github.com/angular-ui/bootstrap/issues/3411), [#1030](https://github.com/angular-ui/bootstrap/issues/1030))
+  * Make Auto-Close Dropdowns optional. ([a50f1120](https://github.com/angular-ui/bootstrap/commit/a50f11201eeb18569dca0ac3bb157e43cb9d9076), closes [#2218](https://github.com/angular-ui/bootstrap/issues/2218), [#3045](https://github.com/angular-ui/bootstrap/issues/3045))
+* **modal:**
+  * Add a vetoable modal.closing event ([a5a82d9b](https://github.com/angular-ui/bootstrap/commit/a5a82d9be7dc0bd1cfd510bacf9aa411c6efe1bc))
+  * pass reason when opened promise rejected ([0ad208d6](https://github.com/angular-ui/bootstrap/commit/0ad208d6a0164517b85d8e8181e4a0fc98f4f5ec), closes [#2978](https://github.com/angular-ui/bootstrap/issues/2978))
+  * add option to disable animations ([5e661d47](https://github.com/angular-ui/bootstrap/commit/5e661d47d6698fdfebb52402eb1687e5697c0040), closes [#1007](https://github.com/angular-ui/bootstrap/issues/1007), [#2725](https://github.com/angular-ui/bootstrap/issues/2725))
+* **popover:**
+  * respect popover-class option ([88a41dce](https://github.com/angular-ui/bootstrap/commit/88a41dce86c33bf1e0665d880ca68d3535aed553), closes [#3569](https://github.com/angular-ui/bootstrap/issues/3569))
+  * use expression to fix usage with $sce ([422c8234](https://github.com/angular-ui/bootstrap/commit/422c823460663151e3482275d9c6749bb714a415), closes [#3558](https://github.com/angular-ui/bootstrap/issues/3558))
+  * add popover-template directive ([7e3179ab](https://github.com/angular-ui/bootstrap/commit/7e3179ab9fdbba6c00ff1c30f97b432b58f9eafb))
+* **progressbar:** allow dynamic update to max ([7ccff028](https://github.com/angular-ui/bootstrap/commit/7ccff028ff5ed19af63d9cf1f5e078223924f3a0))
+* **rating:** add rounding logic to rating value ([b076483c](https://github.com/angular-ui/bootstrap/commit/b076483caa9b672068ae8d0cbdfeaed68f530861), closes [#3413](https://github.com/angular-ui/bootstrap/issues/3413), [#3415](https://github.com/angular-ui/bootstrap/issues/3415))
+* **tabs:** it should not select first not active tab as selected ([91b5fb62](https://github.com/angular-ui/bootstrap/commit/91b5fb62eedbb600d6a6abe32376846f327a903d))
+* **timepicker:**
+  * always pad minutes ([6324486d](https://github.com/angular-ui/bootstrap/commit/6324486d70edc01fb28f61f0a68a6a490378d602), closes [#1598](https://github.com/angular-ui/bootstrap/issues/1598), [#3533](https://github.com/angular-ui/bootstrap/issues/3533))
+  * have up/down arrow keys control time selection ([22961157](https://github.com/angular-ui/bootstrap/commit/22961157ad4636db12336abba54cc893554b99d6))
+* **tooltip:**
+  * use expression to fix usage with $sce ([d867f830](https://github.com/angular-ui/bootstrap/commit/d867f8302d4632a34c81d151923b497f9af3fcfd), closes [#3558](https://github.com/angular-ui/bootstrap/issues/3558))
+  * add tooltip-html directive ([e31fcf0f](https://github.com/angular-ui/bootstrap/commit/e31fcf0fcb06580064d1e6375dbedb69f1c95f25), closes [#3496](https://github.com/angular-ui/bootstrap/issues/3496))
+  * add tooltip-template directive ([a1695114](https://github.com/angular-ui/bootstrap/commit/a1695114a245312878d315dfc9e369f98d573eae), closes [#220](https://github.com/angular-ui/bootstrap/issues/220))
+  * update position dynamically ([853fa457](https://github.com/angular-ui/bootstrap/commit/853fa4578a1f127fee9283e725d6e19789882121), closes [#96](https://github.com/angular-ui/bootstrap/issues/96), [#1109](https://github.com/angular-ui/bootstrap/issues/1109), [#2816](https://github.com/angular-ui/bootstrap/issues/2816), [#3435](https://github.com/angular-ui/bootstrap/issues/3435))
+  * Support for tooltip-class configuration ([d784354a](https://github.com/angular-ui/bootstrap/commit/d784354a53fa40597cb8c124405ea9a90b6f0b8e), closes [#3126](https://github.com/angular-ui/bootstrap/issues/3126))
+* **transition:** deprecate transition module ([8a552443](https://github.com/angular-ui/bootstrap/commit/8a552443741d1e5b4b29d9da9c7e9990fa37886c), closes [#3497](https://github.com/angular-ui/bootstrap/issues/3497))
+
+
 # 0.12.1 (2015-02-20)
 
 ## Bug Fixes
@@ -214,6 +728,12 @@ Revert breaking change in **dropdown** ([1a998c4](http://github.com/angular-ui/b
 `*-format` attributes have been renamed to `format-*`
 `min` attribute has been renamed to `min-date`
 `max` attribute has been renamed to `max-date`
+`Open on focus` has been removed. Read more on this ([comment](https://github.com/angular-ui/bootstrap/pull/1922#issuecomment-40491716)). 
+`dateFormat` renamed to `datepickerPopup` in datepickerPopupConfig
+
+- **dropdown:**
+
+ Elements with the `dropdown-toggle` directive must have a parent element with the `dropdown` directive.
 
 - **pagination:**
 

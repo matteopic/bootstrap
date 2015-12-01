@@ -2,7 +2,7 @@ Rating directive that will take care of visualising a star rating bar.
 
 ### Settings ###
 
-#### `<rating>` ####
+#### `<uib-rating>` ####
 
  * `ng-model` <i class="glyphicon glyphicon-eye-open"></i>
  	:
@@ -15,6 +15,10 @@ Rating directive that will take care of visualising a star rating bar.
  * `readonly` <i class="icon-eye-open"></i>
  	_(Defaults: false)_ :
  	Prevent user's interaction.
+
+ * `titles`
+ 	_(Defaults: ["one", "two", "three", "four", "five"])_ :
+ 	An array of Strings defining titles for all icons 
 
  * `on-hover(value)`
  	:

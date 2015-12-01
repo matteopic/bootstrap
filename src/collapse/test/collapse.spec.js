@@ -1,18 +1,16 @@
-describe('collapse directive', function () {
-
-  var scope, $compile, $timeout, $transition;
-  var element;
+describe('collapse directive', function() {
+  var element, scope, $compile, $animate;
 
   beforeEach(module('ui.bootstrap.collapse'));
-  beforeEach(inject(function(_$rootScope_, _$compile_, _$timeout_, _$transition_) {
+  beforeEach(module('ngAnimateMock'));
+  beforeEach(inject(function(_$rootScope_, _$compile_, _$animate_) {
     scope = _$rootScope_;
     $compile = _$compile_;
-    $timeout = _$timeout_;
-    $transition = _$transition_;
+    $animate = _$animate_;
   }));
 
   beforeEach(function() {
-    element = $compile('<div collapse="isCollapsed">Some Content</div>')(scope);
+    element = $compile('<div uib-collapse="isCollapsed">Some Content</div>')(scope);
     angular.element(document.body).append(element);
   });
 
@@ -20,63 +18,87 @@ describe('collapse directive', function () {
     element.remove();
   });
 
-  it('should be hidden on initialization if isCollapsed = true without transition', function() {
+  it('should be hidden on initialization if isCollapsed = true', function() {
     scope.isCollapsed = true;
     scope.$digest();
-    //No animation timeout here
     expect(element.height()).toBe(0);
   });
 
-  it('should collapse if isCollapsed = true with animation on subsequent use', function() {
+  it('should collapse if isCollapsed = true on subsequent use', function() {
     scope.isCollapsed = false;
     scope.$digest();
+    $animate.flush();
     scope.isCollapsed = true;
     scope.$digest();
-    $timeout.flush();
+    $animate.flush();
     expect(element.height()).toBe(0);
   });
 
-  it('should be shown on initialization if isCollapsed = false without transition', function() {
+  it('should be shown on initialization if isCollapsed = false', function() {
     scope.isCollapsed = false;
     scope.$digest();
-    //No animation timeout here
+    $animate.flush();
     expect(element.height()).not.toBe(0);
   });
 
-  it('should expand if isCollapsed = false with animation on subsequent use', function() {
+  it('should expand if isCollapsed = false on subsequent use', function() {
     scope.isCollapsed = false;
     scope.$digest();
+    $animate.flush();
     scope.isCollapsed = true;
     scope.$digest();
+    $animate.flush();
     scope.isCollapsed = false;
     scope.$digest();
-    $timeout.flush();
+    $animate.flush();
     expect(element.height()).not.toBe(0);
   });
 
-  it('should expand if isCollapsed = true with animation on subsequent uses', function() {
+  it('should expand if isCollapsed = true on subsequent uses', function() {
     scope.isCollapsed = false;
     scope.$digest();
+    $animate.flush();
     scope.isCollapsed = true;
     scope.$digest();
+    $animate.flush();
     scope.isCollapsed = false;
     scope.$digest();
+    $animate.flush();
     scope.isCollapsed = true;
     scope.$digest();
-    $timeout.flush();
+    $animate.flush();
     expect(element.height()).toBe(0);
-    if ($transition.transitionEndEventName) {
-      element.triggerHandler($transition.transitionEndEventName);
-      expect(element.height()).toBe(0);
-    }
+  });
+
+  it('should change aria-expanded attribute', function() {
+    scope.isCollapsed = false;
+    scope.$digest();
+    $animate.flush();
+    expect(element.attr('aria-expanded')).toBe('true');
+
+    scope.isCollapsed = true;
+    scope.$digest();
+    $animate.flush();
+    expect(element.attr('aria-expanded')).toBe('false');
+  });
+
+  it('should change aria-hidden attribute', function() {
+    scope.isCollapsed = false;
+    scope.$digest();
+    $animate.flush();
+    expect(element.attr('aria-hidden')).toBe('false');
+
+    scope.isCollapsed = true;
+    scope.$digest();
+    $animate.flush();
+    expect(element.attr('aria-hidden')).toBe('true');
   });
 
   describe('dynamic content', function() {
-
     var element;
 
     beforeEach(function() {
-      element = angular.element('<div collapse="isCollapsed"><p>Initial content</p><div ng-show="exp">Additional content</div></div>');
+      element = angular.element('<div uib-collapse="isCollapsed"><p>Initial content</p><div ng-show="exp">Additional content</div></div>');
       $compile(element)(scope);
       angular.element(document.body).append(element);
     });
@@ -89,6 +111,7 @@ describe('collapse directive', function () {
       scope.exp = false;
       scope.isCollapsed = false;
       scope.$digest();
+      $animate.flush();
       var collapseHeight = element.height();
       scope.exp = true;
       scope.$digest();
@@ -99,11 +122,11 @@ describe('collapse directive', function () {
       scope.exp = true;
       scope.isCollapsed = false;
       scope.$digest();
+      $animate.flush();
       var collapseHeight = element.height();
       scope.exp = false;
       scope.$digest();
       expect(element.height()).toBeLessThan(collapseHeight);
     });
-
   });
 });

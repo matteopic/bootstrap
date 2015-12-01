@@ -2,11 +2,14 @@ A lightweight & configurable timepicker directive.
 
 ### Settings ###
 
-All settings can be provided as attributes in the `<timepicker>` or globally configured through the `timepickerConfig`.
+All settings can be provided as attributes in the `<uib-timepicker>` or globally configured through the `uibTimepickerConfig`.
 
  * `ng-model` <i class="glyphicon glyphicon-eye-open"></i>
  	:
  	The Date object that provides the time state.
+
+  * `template-url` (Defaults: `template/timepicker/timepicker.html`) :
+    Add the ability to override the template used on the component.
 
  * `hour-step` <i class="glyphicon glyphicon-eye-open"></i>
  	_(Defaults: 1)_ :
@@ -15,6 +18,10 @@ All settings can be provided as attributes in the `<timepicker>` or globally con
  * `minute-step` <i class="glyphicon glyphicon-eye-open"></i>
  	_(Defaults: 1)_ :
  	 Number of minutes to increase or decrease when using a button.
+
+ * `second-step` <i class="glyphicon glyphicon-eye-open"></i>
+    _(Defaults: 1)_ :
+     Number of seconds to increase or decrease when using a button.
 
  * `show-meridian` <i class="glyphicon glyphicon-eye-open"></i>
  	_(Defaults: true)_ :
@@ -29,5 +36,33 @@ All settings can be provided as attributes in the `<timepicker>` or globally con
  	 Whether user can type inside the hours & minutes input.
 
  * `mousewheel`
- 	_(Defaults: true)_ :
- 	 Whether user can scroll inside the hours & minutes input to increase or decrease it's values.
+    _(Defaults: true)_ :
+     Whether user can scroll inside the hours & minutes input to increase or decrease it's values.
+
+ * `arrowkeys`
+    _(Defaults: true)_ :
+     Whether user can use up/down arrowkeys inside the hours & minutes input to increase or decrease it's values.
+
+ * `show-spinners`
+    _(Defaults: true)_ :
+     Shows spinner arrows above and below the inputs
+
+ * `show_seconds`
+    _(Defaults: false)_ :
+     Shows seconds input
+
+ * `min`
+    _(Defaults: undefined)_ :
+     Minimum time a user can select
+
+ * `max`
+    _(Defaults: undefined)_ :
+     Maximum time a user can select
+
+ * `tabindex`
+    _(Defaults: 0)_ :
+     Sets tabindex for each control in timepicker
+
+ * `template-url`
+    _(Defaults: uib/template/timepicker/timepicker.html)_ :
+     Add the ability to override the template used on the component.

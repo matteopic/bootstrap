@@ -1,13 +1,16 @@
-describe('pager directive', function () {
-  var $compile, $rootScope, element;
-  beforeEach(module('ui.bootstrap.pagination'));
-  beforeEach(module('template/pagination/pager.html'));
-  beforeEach(inject(function(_$compile_, _$rootScope_) {
+describe('pager directive', function() {
+  var $compile, $rootScope, $document, $templateCache, body, element;
+  beforeEach(module('ui.bootstrap.pager'));
+  beforeEach(module('uib/template/pager/pager.html'));
+  beforeEach(inject(function(_$compile_, _$rootScope_, _$document_, _$templateCache_) {
     $compile = _$compile_;
     $rootScope = _$rootScope_;
     $rootScope.total = 47; // 5 pages
     $rootScope.currentPage = 3;
-    element = $compile('<pager total-items="total" ng-model="currentPage"></pager>')($rootScope);
+    $document = _$document_;
+    $templateCache = _$templateCache_;
+    body = $document.find('body');
+    element = $compile('<uib-pager total-items="total" ng-model="currentPage"></uib-pager>')($rootScope);
     $rootScope.$digest();
   }));
 
@@ -21,6 +24,10 @@ describe('pager directive', function () {
 
   function clickPaginationEl(index) {
     getPaginationEl(index).find('a').click();
+  }
+
+  function getPaginationLinkEl(elem, index) {
+    return elem.find('li').eq(index).find('a');
   }
 
   function updateCurrentPage(value) {
@@ -44,6 +51,21 @@ describe('pager directive', function () {
 
     expect(getPaginationEl(-1)).not.toHaveClass('previous');
     expect(getPaginationEl(-1)).toHaveClass('next');
+  });
+
+  it('exposes the controller on the template', function() {
+    $templateCache.put('uib/template/pager/pager.html', '<div>{{pager.text}}</div>');
+
+    element = $compile('<uib-pager></uib-pager>')($rootScope);
+    $rootScope.$digest();
+
+    var ctrl = element.controller('uibPager');
+    expect(ctrl).toBeDefined();
+
+    ctrl.text = 'foo';
+    $rootScope.$digest();
+
+    expect(element.html()).toBe('foo');
   });
 
   it('disables the "previous" link if current page is 1', function() {
@@ -80,7 +102,7 @@ describe('pager directive', function () {
 
   it('executes the `ng-change` expression when an element is clicked', function() {
     $rootScope.selectPageHandler = jasmine.createSpy('selectPageHandler');
-    element = $compile('<pager total-items="total" ng-model="currentPage" ng-change="selectPageHandler()"></pager>')($rootScope);
+    element = $compile('<uib-pager total-items="total" ng-model="currentPage" ng-change="selectPageHandler()"></uib-pager>')($rootScope);
     $rootScope.$digest();
 
     clickPaginationEl(-1);
@@ -96,10 +118,45 @@ describe('pager directive', function () {
     expect(getPaginationEl(-1).text()).toBe('Next »');
   });
 
-  describe('`items-per-page`', function () {
+  it('should blur the "next" link after it has been clicked', function() {
+    body.append(element);
+    var linkEl = getPaginationLinkEl(element, -1);
+
+    linkEl.focus();
+    expect(linkEl).toHaveFocus();
+
+    linkEl.click();
+    expect(linkEl).not.toHaveFocus();
+
+    element.remove();
+  });
+
+  it('should blur the "prev" link after it has been clicked', function() {
+    body.append(element);
+    var linkEl = getPaginationLinkEl(element, -1);
+
+    linkEl.focus();
+    expect(linkEl).toHaveFocus();
+
+    linkEl.click();
+    expect(linkEl).not.toHaveFocus();
+
+    element.remove();
+  });
+
+  it('allows custom templates', function() {
+    $templateCache.put('foo/bar.html', '<div>baz</div>');
+
+    element = $compile('<uib-pager template-url="foo/bar.html"></uib-pager>')($rootScope);
+    $rootScope.$digest();
+
+    expect(element.html()).toBe('baz');
+  });
+
+  describe('`items-per-page`', function() {
     beforeEach(function() {
       $rootScope.perpage = 5;
-      element = $compile('<pager total-items="total" items-per-page="perpage" ng-model="currentPage"></pager>')($rootScope);
+      element = $compile('<uib-pager total-items="total" items-per-page="perpage" ng-model="currentPage"></uib-pager>')($rootScope);
       $rootScope.$digest();
     });
 
@@ -120,7 +177,7 @@ describe('pager directive', function () {
     });
   });
 
-  describe('when `page` is not a number', function () {
+  describe('when `page` is not a number', function() {
     it('handles string', function() {
       updateCurrentPage('1');
       expect(getPaginationEl(0)).toHaveClass('disabled');
@@ -130,10 +187,10 @@ describe('pager directive', function () {
     });
   });
 
-  describe('`num-pages`', function () {
+  describe('`num-pages`', function() {
     beforeEach(function() {
       $rootScope.numpg = null;
-      element = $compile('<pager total-items="total" ng-model="currentPage" num-pages="numpg"></pager>')($rootScope);
+      element = $compile('<uib-pager total-items="total" ng-model="currentPage" num-pages="numpg"></uib-pager>')($rootScope);
       $rootScope.$digest();
     });
 
@@ -144,33 +201,33 @@ describe('pager directive', function () {
 
   describe('setting `pagerConfig`', function() {
     var originalConfig = {};
-    beforeEach(inject(function(pagerConfig) {
-      angular.extend(originalConfig, pagerConfig);
-      pagerConfig.previousText = 'PR';
-      pagerConfig.nextText = 'NE';
-      pagerConfig.align = false;
-      element = $compile('<pager total-items="total" ng-model="currentPage"></pager>')($rootScope);
+    beforeEach(inject(function(uibPagerConfig) {
+      angular.extend(originalConfig, uibPagerConfig);
+      uibPagerConfig.previousText = 'PR';
+      uibPagerConfig.nextText = 'NE';
+      uibPagerConfig.align = false;
+      element = $compile('<uib-pager total-items="total" ng-model="currentPage"></uib-pager>')($rootScope);
       $rootScope.$digest();
     }));
-    afterEach(inject(function(pagerConfig) {
+    afterEach(inject(function(uibPagerConfig) {
       // return it to the original state
-      angular.extend(pagerConfig, originalConfig);
+      angular.extend(uibPagerConfig, originalConfig);
     }));
 
-    it('should change paging text', function () {
+    it('should change paging text', function() {
       expect(getPaginationEl(0).text()).toBe('PR');
       expect(getPaginationEl(-1).text()).toBe('NE');
     });
 
-    it('should not align previous & next page link', function () {
+    it('should not align previous & next page link', function() {
       expect(getPaginationEl(0)).not.toHaveClass('previous');
       expect(getPaginationEl(-1)).not.toHaveClass('next');
     });
   });
 
-  describe('override configuration from attributes', function () {
+  describe('override configuration from attributes', function() {
     beforeEach(function() {
-      element = $compile('<pager align="false" previous-text="<" next-text=">" total-items="total" ng-model="currentPage"></pager>')($rootScope);
+      element = $compile('<uib-pager align="false" previous-text="<" next-text=">" total-items="total" ng-model="currentPage"></uib-pager>')($rootScope);
       $rootScope.$digest();
     });
 
@@ -178,12 +235,12 @@ describe('pager directive', function () {
       expect(getPaginationBarSize()).toBe(2);
     });
 
-    it('should change paging text from attributes', function () {
+    it('should change paging text from attributes', function() {
       expect(getPaginationEl(0).text()).toBe('<');
       expect(getPaginationEl(-1).text()).toBe('>');
     });
 
-    it('should not align previous & next page link', function () {
+    it('should not align previous & next page link', function() {
       expect(getPaginationEl(0)).not.toHaveClass('previous');
       expect(getPaginationEl(-1)).not.toHaveClass('next');
     });
@@ -191,7 +248,7 @@ describe('pager directive', function () {
     it('changes "previous" & "next" text from interpolated attributes', function() {
       $rootScope.previousText = '<<';
       $rootScope.nextText = '>>';
-      element = $compile('<pager align="false" previous-text="{{previousText}}" next-text="{{nextText}}" total-items="total" ng-model="currentPage"></pager>')($rootScope);
+      element = $compile('<uib-pager align="false" previous-text="{{previousText}}" next-text="{{nextText}}" total-items="total" ng-model="currentPage"></uib-pager>')($rootScope);
       $rootScope.$digest();
 
       expect(getPaginationEl(0).text()).toBe('<<');
@@ -199,4 +256,26 @@ describe('pager directive', function () {
     });
   });
 
+  it('disables the component when ng-disabled is true', function() {
+    $rootScope.disable = true;
+
+    element = $compile('<uib-pager total-items="total" ng-disabled="disable" ng-model="currentPage"></uib-pager>')($rootScope);
+    $rootScope.$digest();
+    updateCurrentPage(2);
+
+    expect(getPaginationEl(0)).toHaveClass('disabled');
+    expect(getPaginationEl(-1)).toHaveClass('disabled');
+
+    $rootScope.disable = false;
+    $rootScope.$digest();
+
+    expect(getPaginationEl(0)).not.toHaveClass('disabled');
+    expect(getPaginationEl(-1)).not.toHaveClass('disabled');
+
+    $rootScope.disable = true;
+    $rootScope.$digest();
+
+    expect(getPaginationEl(0)).toHaveClass('disabled');
+    expect(getPaginationEl(-1)).toHaveClass('disabled');
+  });
 });

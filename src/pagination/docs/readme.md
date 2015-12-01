@@ -3,11 +3,19 @@ A lightweight pagination directive that is focused on ... providing pagination &
 
 ### Pagination Settings ###
 
-Settings can be provided as attributes in the `<pagination>` or globally configured through the `paginationConfig`.
+Settings can be provided as attributes in the `<uib-pagination>` or globally configured through the `uibPaginationConfig`.
+
+ * `ng-change`
+ 	:
+ 	`ng-change` can be used together with `ng-model` to call a function whenever the page changes.
 
  * `ng-model` <i class="glyphicon glyphicon-eye-open"></i>
  	:
  	Current page number. First page is 1.
+
+ * `ng-disabled` <i class="glyphicon glyphicon-eye-open"></i>
+  :
+  Used to disable the pagination component
 
  * `total-items` <i class="glyphicon glyphicon-eye-open"></i>
  	:
@@ -28,6 +36,10 @@ Settings can be provided as attributes in the `<pagination>` or globally configu
  * `rotate`
  	_(Defaults: true)_ :
  	Whether to keep current page in the middle of the visible ones.
+ 	
+ * `force-ellipses`
+ 	_(Defaults: false)_ :
+ 	Also displays ellipses when `rotate` is true and `max-size` is smaller than the number of pages.
 
  * `direction-links`
  	_(Default: true)_ :
@@ -52,20 +64,11 @@ Settings can be provided as attributes in the `<pagination>` or globally configu
  * `last-text`
  	_(Default: 'Last')_ :
  	Text for Last button.
+ 	
+ * `boundary-link-numbers`
+ 	_(Default: false)_ :
+ 	Whether to always display the first and last page numbers. If `max-size` is smaller than the number of pages, then the  first and last page numbers are still shown with ellipses in-between as necessary. NOTE: `max-size` refers to the center of the range. This option may add up to 2 more numbers on each side of the displayed range for the end value and what would be an ellipsis but is replaced by a number because it is sequential. 
 
-### Pager Settings ###
-
-Settings can be provided as attributes in the `<pager>` or globally configured through the `pagerConfig`.  
-For `ng-model`, `total-items`, `items-per-page` and `num-pages` see pagination settings. Other settings are:
-
- * `align`
- 	_(Default: true)_ :
- 	Whether to align each link to the sides.
-
- * `previous-text`
- 	_(Default: '« Previous')_ :
- 	Text for Previous button.
-
- * `next-text`
- 	_(Default: 'Next »')_ :
- 	Text for Next button.
+ * `template-url`
+  _(Default: 'uib/template/pagination/pagination.html')_ :
+  Override the template for the component with a custom provided template
